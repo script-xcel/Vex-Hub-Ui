@@ -1,3 +1,4 @@
+
 local PlaceName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
 
     if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
@@ -9,7 +10,7 @@ local PlaceName = game:GetService("MarketplaceService"):GetProductInfo(game.Plac
     wait(1)
 
 do local GUI = game.CoreGui:FindFirstChild("Darkrai");if GUI then GUI:Destroy();end;if _G.Color == nil then
-       _G.Color = Color3.fromRGB(255, 0, 0)
+       _G.Color = Color3.fromRGB(147,112,219)
    end 
 end
 
@@ -100,7 +101,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Main.Parent = Darkrai
 	Main.ClipsDescendants = true
 	Main.AnchorPoint = Vector2.new(0.5,0.5)
-	Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+	Main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 	Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Main.Size = UDim2.new(0, 0, 0, 0)
 	
@@ -113,7 +114,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	local Top = Instance.new("Frame")
 	Top.Name = "Top"
 	Top.Parent = Main
-	Top.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+	Top.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 	Top.Size = UDim2.new(0, 656, 0, 27)
 
 	local TCNR = Instance.new("UICorner")
@@ -138,7 +139,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Name.Size = UDim2.new(0, 61, 0, 27)
 	Name.Font = Enum.Font.GothamSemibold
 	Name.Text = hubname
-	Name.TextColor3 = Color3.fromRGB(255, 0, 0)
+	Name.TextColor3 = Color3.fromRGB(147,112,219)
 	Name.TextSize = 17.000
 
 	local Hub = Instance.new("TextLabel")
@@ -150,7 +151,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Hub.Size = UDim2.new(0, 81, 0, 27)
 	Hub.Font = Enum.Font.GothamSemibold
 	Hub.Text = "  | "..gamename
-	Hub.TextColor3 = Color3.fromRGB(255, 0, 0)
+	Hub.TextColor3 = Color3.fromRGB(147,112,219)
 	Hub.TextSize = 17.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -163,13 +164,13 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	BindButton.Size = UDim2.new(0, 100, 0, 27)
 	BindButton.Font = Enum.Font.GothamSemibold
 	BindButton.Text = "[RightControl]"
-	BindButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+	BindButton.TextColor3 = Color3.fromRGB(147,112,219)
 	BindButton.TextSize = 13.000
 
 	local Tab = Instance.new("Frame")
 	Tab.Name = "Tab"
 	Tab.Parent = Main
-	Tab.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+	Tab.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 	Tab.Position = UDim2.new(0, 5, 0, 30)
 	Tab.Size = UDim2.new(0, 150, 0, 365)
 
@@ -202,7 +203,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	local Page = Instance.new("Frame")
 	Page.Name = "Page"
 	Page.Parent = Main
-	Page.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+	Page.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 	Page.Position = UDim2.new(0.245426834, 0, 0.075000003, 0)
 	Page.Size = UDim2.new(0, 490, 0, 365)
 
@@ -256,8 +257,8 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 		TabButton.Parent = ScrollTab
 		TabButton.Name = text.."Server"
 		TabButton.Text = text
-		TabButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-	    TabButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
+		TabButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+	    TabButton.BorderColor3 = Color3.fromRGB(147,112,219)
         TabButton.BorderSizePixel = 3
 		TabButton.Size = UDim2.new(0, 130, 0, 23)
 		TabButton.Font = Enum.Font.GothamSemibold
@@ -355,7 +356,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			
 			TextBtn.Name = "TextBtn"
 			TextBtn.Parent = Button
-			TextBtn.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+			TextBtn.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 			TextBtn.Position = UDim2.new(0, 1, 0, 1)
 			TextBtn.Size = UDim2.new(0, 468, 0, 29)
 			TextBtn.AutoButtonColor = false
@@ -425,7 +426,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 
 			Button.Name = "Button"
 			Button.Parent = Toggle
-			Button.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+			Button.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 			Button.Position = UDim2.new(0, 1, 0, 1)
 			Button.Size = UDim2.new(0, 468, 0, 29)
 			Button.AutoButtonColor = false
@@ -511,7 +512,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			
 			Dropdown.Name = "Dropdown"
 			Dropdown.Parent = MainFramePage
-			Dropdown.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+			Dropdown.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 			Dropdown.ClipsDescendants = true
 			Dropdown.Size = UDim2.new(0, 470, 0, 31)
 			
@@ -722,7 +723,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 
 			sliderr.Name = "sliderr"
 			sliderr.Parent = Slider
-			sliderr.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+			sliderr.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 			sliderr.Position = UDim2.new(0, 1, 0, 1)
 			sliderr.Size = UDim2.new(0, 468, 0, 49)
 
@@ -762,7 +763,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 
 			bar.Name = "bar"
 			bar.Parent = AHEHE
-			bar.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			bar.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 			bar.Size = UDim2.new(0, 448, 0, 5)
 
 			bar1.Name = "bar1"
@@ -800,7 +801,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			valuecorner.Parent = slidervalue
 
 			TextBox.Parent = slidervalue
-			TextBox.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+			TextBox.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 			TextBox.Position = UDim2.new(0, 1, 0, 1)
 			TextBox.Size = UDim2.new(0, 63, 0, 16)
 			TextBox.Font = Enum.Font.GothamSemibold
@@ -891,7 +892,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 
 			Textboxx.Name = "Textboxx"
 			Textboxx.Parent = Textbox
-			Textboxx.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+			Textboxx.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 			Textboxx.Position = UDim2.new(0, 1, 0, 1)
 			Textboxx.Size = UDim2.new(0, 468, 0, 29)
 
@@ -925,7 +926,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 
 			RealTextbox.Name = "RealTextbox"
 			RealTextbox.Parent = Textbox
-			RealTextbox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			RealTextbox.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 			RealTextbox.BackgroundTransparency = 0
 			RealTextbox.Position = UDim2.new(0, 360, 0, 4)
 			RealTextbox.Size = UDim2.new(0, 100, 0, 24)
